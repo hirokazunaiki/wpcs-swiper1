@@ -1,3 +1,4 @@
+
 /* -------------------------------------------------------------------------- */
 
 /*	Swiper
@@ -67,25 +68,25 @@
 
 .swiper1 .swiper-slide-title {
 	color: #d5142b;
-	font-size: 1.3rem;
-	font-weight: 700;
+	font-size: 2.4rem !important;
+	font-weight: 600 !important;
 	margin-top: 0;
 	margin-bottom: 1rem;
 }
 
 .swiper1 .swiper-slide-title span {
 	display: block;
-	font-size: 2.4rem;
-	font-weight: 600;
+	font-size: 1.3rem !important;
+	font-weight: 500 !important;
 	margin-bottom: 0.3rem;
 }
 
 .swiper1 .swiper-slide-text {
 	color: #222;
-	font-size: 1.2rem;
-	font-weight: 500;
-	text-align: left;
+	font-size: 1.2rem !important;
+	font-weight: 500 !important;
 	line-height: 1.7 !important;
+	text-align: left;
 }
 
 .swiper1 .swiper-slide-body > *:last-child {
