@@ -1,4 +1,4 @@
-//Shortcode Swiper Template
+//Add code to "functions.php"
 function swiper_template( $params = array() ) {
     extract( shortcode_atts( array( 'file' => 'default' ), $params ));
     ob_start();
