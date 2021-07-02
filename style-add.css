@@ -33,7 +33,7 @@
 	width: 100%;
 	height: 50%;
 }
-@media ( min-width: 700px) {
+@media ( min-width: 700px ) {
 	.swiper1 .swiper-slide-img-wrapper {
 		width: 50%;
         height: 100%;
