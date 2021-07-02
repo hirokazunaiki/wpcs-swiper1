@@ -5,8 +5,9 @@
 ?>
 
 <div class="swiper-container swiper1">
-    
+
     <div class="swiper-wrapper">
+
         <div class="swiper-slide">
             <figure class="swiper-slide-img-wrapper">
                 <img src="<?php echo get_theme_file_uri('assets/images/gregory-pappas-ncQM0sUOUMw-unsplash.jpg'); ?>">
@@ -14,7 +15,7 @@
 
             <div class="swiper-slide-body">
                 <h3 class="swiper-slide-title"><span>VISIT</span>ご来店</h3>
-                <p class="swiper-slide-text">まずは当店まで気を付けてご来店ください。</p>
+                <p class="swiper-slide-text">まずは当店までお気を付けてご来店ください。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
         
@@ -25,7 +26,7 @@
 
             <div class="swiper-slide-body">
                 <h3 class="swiper-slide-title"><span>ORDER</span>ご注文</h3>
-                <p class="swiper-slide-text">レジカウンターにてお好きなメニューを注文します。フードメニューもあります。</p>
+                <p class="swiper-slide-text">レジカウンターにてお好きなメニューを注文します。フードはショーケースにあります。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
 
@@ -50,6 +51,7 @@
                 <p class="swiper-slide-text">お好きな席に座り、あとはごゆっくりお楽しみください。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
+
     </div><!-- .swiper-wrapper -->
 
     <div class="swiper-pagination"></div>
@@ -58,12 +60,13 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div><!-- .swiper-button-wrapper -->
+
 </div><!-- .swiper-container -->
 
+
 <script>
-    $(window).on('load resize', function() {
-        var menu = ['ご来店', 'ご注文', 'お支払い', 'ご飲食']
-        var mySwiper1 = new Swiper ('.swiper-container.swiper1', {
+    function setSwiper() {
+        var mySwiper1 = new Swiper ('.swiper1', {
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
@@ -82,32 +85,27 @@
                     slidesPerView: 1.2,
                 },
                 600: {
-                    spaceBetween: 30,
+                    spaceBetween: 25,
                     slidesPerView: 1.4,
                 },
                 700: {
                     spaceBetween: 30,
                     slidesPerView: 1.2,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
-                        renderBullet: '',
-                    },
                 },
                 1000: {
                     spaceBetween: 30,
                     slidesPerView: 1.5,
                     pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
                         renderBullet: function (index, className) {
-                            return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                            return '<span class="' + className + '">' + ['ご来店', 'ご注文', 'お支払い', 'ご飲食',][index] + '</span>';
                         },
                     },
                 },
             },
         });
-    });
+    }
+
+    setSwiper();
+
+    window.addEventListener('resize', setSwiper);
 </script>
