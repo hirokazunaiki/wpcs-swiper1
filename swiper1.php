@@ -14,7 +14,7 @@
             </figure><!-- .swiper-slide-img-wrapper -->
 
             <div class="swiper-slide-body">
-                <h3 class="swiper-slide-title"><span>VISIT</span>ご来店</h3>
+                <h3 class="swiper-slide-title">VISIT<span>ご来店</span></h3>
                 <p class="swiper-slide-text">まずは当店までお気を付けてご来店ください。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
@@ -25,7 +25,7 @@
             </figure><!-- .swiper-slide-img-wrapper -->
 
             <div class="swiper-slide-body">
-                <h3 class="swiper-slide-title"><span>ORDER</span>ご注文</h3>
+                <h3 class="swiper-slide-title">ORDER<span>ご注文</span></h3>
                 <p class="swiper-slide-text">レジカウンターにてお好きなメニューを注文します。フードはショーケースにあります。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
@@ -36,7 +36,7 @@
             </figure><!-- .swiper-slide-img-wrapper -->
 
             <div class="swiper-slide-body">
-                <h3 class="swiper-slide-title"><span>PAY</span>お支払い</h3>
+                <h3 class="swiper-slide-title">PAY<span>お支払い</span></h3>
                 <p class="swiper-slide-text">現金またはクレジットカードまたは電子マネーでお支払いできます。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
@@ -47,7 +47,7 @@
             </figure><!-- .swiper-slide-img-wrapper -->
 
             <div class="swiper-slide-body">
-                <h3 class="swiper-slide-title"><span>DRINK<small>&</small>EAT</span>ご飲食</h3>
+                <h3 class="swiper-slide-title">DRINK<small>&</small>EAT<span>ご飲食</span></h3>
                 <p class="swiper-slide-text">お好きな席に座り、あとはごゆっくりお楽しみください。</p>
             </div><!-- .swiper-slide-body -->
         </div><!-- .swiper-slide -->
@@ -97,7 +97,7 @@
                     slidesPerView: 1.5,
                     pagination: {
                         renderBullet: function (index, className) {
-                            return '<span class="' + className + '">' + ['ご来店', 'ご注文', 'お支払い', 'ご飲食',][index] + '</span>';
+                            return '<span class="' + className + '">' + ['ご来店', 'ご注文', 'お支払い', 'ご飲食', 'お帰り', ][index] + '</span>';
                         },
                     },
                 },
