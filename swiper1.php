@@ -66,7 +66,7 @@
 
 <script>
     function setSwiper() {
-        var mySwiper1 = new Swiper ('.swiper1', {
+        var mySwiper = new Swiper ('.swiper1', {
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
