@@ -97,7 +97,7 @@
                     slidesPerView: 1.5,
                     pagination: {
                         renderBullet: function (index, className) {
-                            return '<span class="' + className + '">' + ['ご来店', 'ご注文', 'お支払い', 'ご飲食', 'お帰り', ][index] + '</span>';
+                            return '<span class="' + className + '">' + ['ご来店', 'ご注文', 'お支払い', 'ご飲食' ][index] + '</span>';
                         },
                     },
                 },
